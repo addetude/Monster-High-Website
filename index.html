@@ -837,6 +837,382 @@
         color: rgba(255, 255, 255, 0.9);
         transform: translateY(-2px);
       }
+
+      /* RESPONSIVE DESIGN - MEDIA QUERIES */
+      
+      /* Large tablets and small desktops (1024px and down) */
+      @media screen and (max-width: 1024px) {
+        .hero img {
+          width: 70%;
+          max-width: 500px;
+        }
+        
+        .overview {
+          width: 90%;
+          padding: 30px;
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .overview .text {
+          margin-right: 0;
+          margin-bottom: 30px;
+          max-width: none;
+        }
+        
+        .overview img {
+          width: 400px;
+          margin-top: 20px;
+          align-self: center;
+        }
+        
+        .carousel {
+          width: 95%;
+          max-width: 800px;
+        }
+        
+        .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          max-width: 800px;
+        }
+        
+        .coffin-container {
+          width: 500px;
+        }
+      }
+      
+      /* Tablets (768px and down) */
+      @media screen and (max-width: 768px) {
+        .hero {
+          top: 20%;
+        }
+        
+        .hero img {
+          width: 80%;
+          max-width: 400px;
+        }
+        
+        .overview {
+          padding: 20px;
+          min-height: 60vh;
+        }
+        
+        .overview .text h1 {
+          font-size: 2em;
+        }
+        
+        .overview img {
+          width: 300px;
+        }
+        
+        .carousel-container h1 {
+          font-size: 2em;
+        }
+        
+        .carousel-content {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 10px 20px;
+          gap: 10px;
+        }
+        
+        .carousel-content img {
+          width: 200px;
+          height: 280px;
+        }
+        
+        .doll-description {
+          max-width: none;
+          padding: 10px;
+        }
+        
+        .doll-description h3 {
+          font-size: 1.5em;
+        }
+        
+        .doll-description p {
+          font-size: 0.9em;
+        }
+        
+        .section-header {
+          font-size: 2.5em;
+        }
+        
+        .grid-container {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6, 1fr);
+          gap: 20px;
+          padding: 15px;
+        }
+        
+        .coffin-container {
+          width: 400px;
+          height: 350px;
+        }
+        
+        .coffin {
+          width: 250px;
+          height: 350px;
+        }
+        
+        .doll-result {
+          width: 250px;
+          height: 300px;
+          left: -20px;
+        }
+        
+        .doll-name {
+          width: 250px;
+          left: -20px;
+          font-size: 1.3em;
+        }
+        
+        footer {
+          flex-direction: column;
+          gap: 15px;
+          padding: 20px;
+        }
+      }
+      
+      /* Mobile phones (480px and down) */
+      @media screen and (max-width: 480px) {
+        .hero {
+          top: 15%;
+        }
+        
+        .hero img {
+          width: 90%;
+          max-width: 300px;
+        }
+        
+        .overview {
+          width: 95%;
+          padding: 15px;
+          margin-top: 100vh;
+        }
+        
+        .overview .text h1 {
+          font-size: 1.8em;
+        }
+        
+        .overview .text p {
+          font-size: 0.9em;
+        }
+        
+        .overview .text button {
+          padding: 10px 20px;
+          font-size: 0.9em;
+        }
+        
+        .overview img {
+          width: 250px;
+        }
+        
+        .carousel {
+          width: 95%;
+          margin: 40px auto;
+        }
+        
+        .carousel-container {
+          height: 450px;
+          padding: 15px 0;
+        }
+        
+        .carousel-container h1 {
+          font-size: 1.8em;
+          margin-bottom: 10px;
+        }
+        
+        .carousel-content {
+          padding: 5px 15px;
+        }
+        
+        .carousel-content img {
+          width: 150px;
+          height: 210px;
+        }
+        
+        .doll-description h3 {
+          font-size: 1.3em;
+          margin-bottom: 8px;
+        }
+        
+        .doll-description p {
+          font-size: 0.8em;
+          line-height: 1.4;
+        }
+        
+        .carousel-btn {
+          width: 40px;
+          height: 40px;
+          font-size: 16px;
+        }
+        
+        .prev-btn {
+          left: 10px;
+        }
+        
+        .next-btn {
+          right: 10px;
+        }
+        
+        .section-header {
+          font-size: 2em;
+          margin-bottom: 20px;
+        }
+        
+        .grid-container {
+          gap: 15px;
+          padding: 10px;
+        }
+        
+        .grid-item {
+          padding: 15px;
+        }
+        
+        .grid-item h3 {
+          font-size: 1.5em;
+        }
+        
+        .media-container {
+          height: 150px;
+        }
+        
+        .movie-button {
+          padding: 10px 20px;
+          font-size: 0.9em;
+        }
+        
+        .random-picker {
+          width: 95%;
+          padding: 20px 15px;
+        }
+        
+        .coffin-container {
+          width: 300px;
+          height: 300px;
+        }
+        
+        .coffin {
+          width: 200px;
+          height: 300px;
+        }
+        
+        .doll-result {
+          width: 200px;
+          height: 250px;
+          left: -10px;
+        }
+        
+        .doll-name {
+          width: 200px;
+          left: -10px;
+          font-size: 1.1em;
+        }
+        
+        #randomButton {
+          padding: 12px 25px;
+          font-size: 1em;
+        }
+        
+        footer {
+          padding: 15px 10px;
+        }
+        
+        footer span,
+        .footer-link {
+          font-size: 0.7em;
+        }
+      }
+      
+      /* Extra small phones (360px and down) */
+      @media screen and (max-width: 360px) {
+        .hero img {
+          width: 95%;
+          max-width: 250px;
+        }
+        
+        .overview .text h1 {
+          font-size: 1.6em;
+        }
+        
+        .overview img {
+          width: 200px;
+        }
+        
+        .carousel-container {
+          height: 400px;
+        }
+        
+        .carousel-container h1 {
+          font-size: 1.6em;
+        }
+        
+        .carousel-content img {
+          width: 120px;
+          height: 170px;
+        }
+        
+        .doll-description h3 {
+          font-size: 1.2em;
+        }
+        
+        .doll-description p {
+          font-size: 0.75em;
+        }
+        
+        .section-header {
+          font-size: 1.8em;
+        }
+        
+        .coffin-container {
+          width: 250px;
+          height: 250px;
+        }
+        
+        .coffin {
+          width: 150px;
+          height: 250px;
+        }
+        
+        .doll-result {
+          width: 150px;
+          height: 200px;
+          left: -5px;
+        }
+        
+        .doll-name {
+          width: 150px;
+          left: -5px;
+          font-size: 1em;
+        }
+      }
+      
+      /* Landscape orientation adjustments for mobile */
+      @media screen and (max-height: 500px) and (orientation: landscape) {
+        .hero {
+          top: 10%;
+        }
+        
+        .hero img {
+          width: 40%;
+          max-width: 300px;
+        }
+        
+        .overview {
+          min-height: 50vh;
+        }
+        
+        .carousel-container {
+          height: 350px;
+        }
+        
+        .coffin-container {
+          height: 250px;
+        }
+      }
     </style>
   </body>
   <script>
